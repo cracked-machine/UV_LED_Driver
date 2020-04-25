@@ -1,0 +1,351 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	2075 6025 2525 6025
+Wire Wire Line
+	2075 6125 2525 6125
+Text Label 2525 6125 2    50   ~ 0
+SWCLK
+Text Label 2525 6325 2    50   ~ 0
+SWDIO
+Text Label 2525 6425 2    50   ~ 0
+NRST
+$Comp
+L Connector_Generic:Conn_01x05 J2
+U 1 1 5EA63B2F
+P 1875 6225
+F 0 "J2" H 1955 6267 50  0000 L CNN
+F 1 "Conn_01x05" H 1955 6176 50  0000 L CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-05A_1x05_P2.54mm_Vertical" H 1875 6225 50  0001 C CNN
+F 3 "~" H 1875 6225 50  0001 C CNN
+	1    1875 6225
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2525 6325 2075 6325
+Wire Wire Line
+	2075 6425 2525 6425
+Wire Wire Line
+	2075 6225 2700 6225
+Wire Wire Line
+	2700 6225 2700 6650
+$Comp
+L power:GNDS #PWR018
+U 1 1 5EA63B39
+P 2700 6650
+F 0 "#PWR018" H 2700 6400 50  0001 C CNN
+F 1 "GNDS" H 2705 6477 50  0000 C CNN
+F 2 "" H 2700 6650 50  0001 C CNN
+F 3 "" H 2700 6650 50  0001 C CNN
+	1    2700 6650
+	-1   0    0    -1  
+$EndComp
+Text Label 6200 3250 0    50   ~ 0
+NRST
+Wire Wire Line
+	6650 3250 6200 3250
+Wire Wire Line
+	6650 3950 6525 3950
+Wire Wire Line
+	6050 3950 6050 4625
+$Comp
+L power:GNDS #PWR021
+U 1 1 5EA63B43
+P 6050 4625
+F 0 "#PWR021" H 6050 4375 50  0001 C CNN
+F 1 "GNDS" H 6055 4452 50  0000 C CNN
+F 2 "" H 6050 4625 50  0001 C CNN
+F 3 "" H 6050 4625 50  0001 C CNN
+	1    6050 4625
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6650 3750
+NoConn ~ 6650 3650
+NoConn ~ 7450 3750
+NoConn ~ 7450 3650
+Wire Wire Line
+	7450 3850 7925 3850
+$Comp
+L MCU_ST_STM32L0:STM32L011D4Px U1
+U 1 1 5EA63B4E
+P 7050 3550
+F 0 "U1" H 6525 4225 50  0000 C CNN
+F 1 "STM32L011D4Px" H 6575 4125 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 6750 3050 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00206508.pdf" H 7050 3550 50  0001 C CNN
+	1    7050 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 3950 7925 3950
+Text Label 7925 3950 2    50   ~ 0
+SWCLK
+Text Label 7925 3850 2    50   ~ 0
+SWDIO
+Wire Wire Line
+	7050 3050 7050 2800
+Wire Wire Line
+	7050 4150 7050 4625
+$Comp
+L power:GNDS #PWR022
+U 1 1 5EA63B5F
+P 7050 4625
+F 0 "#PWR022" H 7050 4375 50  0001 C CNN
+F 1 "GNDS" H 7055 4452 50  0000 C CNN
+F 2 "" H 7050 4625 50  0001 C CNN
+F 3 "" H 7050 4625 50  0001 C CNN
+	1    7050 4625
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPST SW1
+U 1 1 5EA63B65
+P 2475 3650
+F 0 "SW1" H 2475 3885 50  0000 C CNN
+F 1 "SW_SPST" H 2475 3794 50  0000 C CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 2475 3650 50  0001 C CNN
+F 3 "~" H 2475 3650 50  0001 C CNN
+	1    2475 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1775 3650 1775 3825
+Wire Wire Line
+	1775 3650 2275 3650
+$Comp
+L power:GNDS #PWR015
+U 1 1 5EA63B6D
+P 1775 3825
+F 0 "#PWR015" H 1775 3575 50  0001 C CNN
+F 1 "GNDS" H 1780 3652 50  0000 C CNN
+F 2 "" H 1775 3825 50  0001 C CNN
+F 3 "" H 1775 3825 50  0001 C CNN
+	1    1775 3825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2675 3650 3400 3650
+Text Label 3400 3650 2    50   ~ 0
+LID_SW
+Wire Wire Line
+	7450 3450 8150 3450
+Text Label 8150 3450 2    50   ~ 0
+LID_SW
+$Comp
+L Regulator_Linear:LD3985G33R_TSOT23 U2
+U 1 1 5EA63B77
+P 2925 1925
+F 0 "U2" H 2925 2267 50  0000 C CNN
+F 1 "LP3992-33B5F" H 2925 2176 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23-5" H 2925 2250 50  0001 C CIN
+F 3 "${KIPRJMOD}/../datasheets/LOWPOWER-LP3992-33B5F_C324570.pdf" H 2925 1975 50  0001 C CNN
+	1    2925 1925
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2625 1825 2325 1825
+Wire Wire Line
+	2625 1925 2325 1925
+Wire Wire Line
+	2325 1925 2325 1825
+Connection ~ 2325 1825
+Wire Wire Line
+	2325 1925 2325 2200
+Connection ~ 2325 1925
+Wire Wire Line
+	3225 1825 3575 1825
+Wire Wire Line
+	3575 1825 3575 1175
+Wire Wire Line
+	3225 1925 3575 1925
+Wire Wire Line
+	3575 1925 3575 2200
+$Comp
+L Device:C C2
+U 1 1 5EA63B87
+P 3575 2350
+F 0 "C2" H 3690 2396 50  0000 L CNN
+F 1 "1uF" H 3690 2305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 3613 2200 50  0001 C CNN
+F 3 "~" H 3575 2350 50  0001 C CNN
+	1    3575 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5EA63B8D
+P 2325 2350
+F 0 "C1" H 2440 2396 50  0000 L CNN
+F 1 "1uF" H 2440 2305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2363 2200 50  0001 C CNN
+F 3 "~" H 2325 2350 50  0001 C CNN
+	1    2325 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2325 2500 2325 2625
+$Comp
+L power:GNDS #PWR017
+U 1 1 5EA63B94
+P 2325 2625
+F 0 "#PWR017" H 2325 2375 50  0001 C CNN
+F 1 "GNDS" H 2330 2452 50  0000 C CNN
+F 2 "" H 2325 2625 50  0001 C CNN
+F 3 "" H 2325 2625 50  0001 C CNN
+	1    2325 2625
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3575 2500 3575 2625
+$Comp
+L power:GNDS #PWR020
+U 1 1 5EA63B9B
+P 3575 2625
+F 0 "#PWR020" H 3575 2375 50  0001 C CNN
+F 1 "GNDS" H 3580 2452 50  0000 C CNN
+F 2 "" H 3575 2625 50  0001 C CNN
+F 3 "" H 3575 2625 50  0001 C CNN
+	1    3575 2625
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2925 2225 2925 2625
+$Comp
+L power:GNDS #PWR019
+U 1 1 5EA63BA2
+P 2925 2625
+F 0 "#PWR019" H 2925 2375 50  0001 C CNN
+F 1 "GNDS" H 2930 2452 50  0000 C CNN
+F 2 "" H 2925 2625 50  0001 C CNN
+F 3 "" H 2925 2625 50  0001 C CNN
+	1    2925 2625
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Barrel_Jack J1
+U 1 1 5EA63BAE
+P 1625 1450
+F 0 "J1" H 1682 1775 50  0000 C CNN
+F 1 "Barrel_Jack" H 1682 1684 50  0000 C CNN
+F 2 "Connector_Molex:Molex_KK-396_A-41791-0002_1x02_P3.96mm_Vertical" H 1675 1410 50  0001 C CNN
+F 3 "~" H 1675 1410 50  0001 C CNN
+	1    1625 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2325 1350 1925 1350
+Wire Wire Line
+	2325 1350 2325 1825
+Wire Wire Line
+	1925 1550 1975 1550
+$Comp
+L power:GNDS #PWR016
+U 1 1 5EA63BB8
+P 1975 2625
+F 0 "#PWR016" H 1975 2375 50  0001 C CNN
+F 1 "GNDS" H 1980 2452 50  0000 C CNN
+F 2 "" H 1975 2625 50  0001 C CNN
+F 3 "" H 1975 2625 50  0001 C CNN
+	1    1975 2625
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2325 1350 2325 1150
+Connection ~ 2325 1350
+$Comp
+L Device:R R13
+U 1 1 5EA63BD8
+P 6375 3950
+F 0 "R13" V 6168 3950 50  0000 C CNN
+F 1 "10K" V 6259 3950 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 6305 3950 50  0001 C CNN
+F 3 "~" H 6375 3950 50  0001 C CNN
+	1    6375 3950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6225 3950 6050 3950
+Wire Wire Line
+	7450 3250 8150 3250
+Text Label 8150 3250 2    50   ~ 0
+UV_LED_CTRL
+Wire Wire Line
+	7450 3350 8150 3350
+Text Label 8150 3350 2    50   ~ 0
+LED_CTRL
+Wire Wire Line
+	7450 3550 8150 3550
+Text Label 8150 3550 2    50   ~ 0
+LED_ADC
+$Comp
+L Device:R_POT RV1
+U 1 1 5EA63BE5
+P 2475 4875
+F 0 "RV1" V 2360 4875 50  0000 C CNN
+F 1 "B10K" V 2269 4875 50  0000 C CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-03A_1x03_P2.54mm_Vertical" H 2475 4875 50  0001 C CNN
+F 3 "~" H 2475 4875 50  0001 C CNN
+	1    2475 4875
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	2625 4875 2725 4875
+Wire Wire Line
+	2325 4875 1775 4875
+Wire Wire Line
+	1775 4875 1775 4575
+Wire Wire Line
+	2475 4650 2725 4650
+Wire Wire Line
+	2725 4650 2725 4875
+Wire Wire Line
+	2475 4650 2475 4725
+Connection ~ 2725 4875
+Wire Wire Line
+	2725 4875 3300 4875
+Text Label 3300 4875 2    50   ~ 0
+LED_ADC
+Text HLabel 9975 3275 2    50   Input ~ 0
+UV_LED_PWM
+Text HLabel 9975 3550 2    50   Input ~ 0
+LED_PWM
+Wire Wire Line
+	9975 3275 9275 3275
+Text Label 9275 3275 0    50   ~ 0
+UV_LED_CTRL
+Wire Wire Line
+	9975 3550 9275 3550
+Text Label 9275 3550 0    50   ~ 0
+LED_CTRL
+Text HLabel 2325 1150 1    50   Input ~ 0
+5V
+Text HLabel 3575 1175 1    50   Input ~ 0
+3V3
+Text Label 3375 1825 0    50   ~ 0
+3V3
+Text HLabel 7050 2800 1    50   Input ~ 0
+3V3
+Text HLabel 1775 4575 1    50   Input ~ 0
+3V3
+Wire Wire Line
+	2525 6025 2525 5725
+Text HLabel 2525 5725 1    50   Input ~ 0
+3V3
+Text Label 2075 1350 0    50   ~ 0
+5V
+Wire Wire Line
+	1975 1550 1975 2625
+$EndSCHEMATC
