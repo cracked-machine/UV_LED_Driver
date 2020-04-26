@@ -72,7 +72,6 @@ F 3 "" H 4525 4650 50  0001 C CNN
 $EndComp
 NoConn ~ 5125 3775
 NoConn ~ 5125 3675
-NoConn ~ 5925 3775
 NoConn ~ 5925 3675
 Wire Wire Line
 	5925 3875 6400 3875
@@ -149,7 +148,7 @@ P 2925 1925
 F 0 "U2" H 2925 2267 50  0000 C CNN
 F 1 "LP3992-33B5F" H 2925 2176 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:TSOT-23-5" H 2925 2250 50  0001 C CIN
-F 3 "${KIPRJMOD}/../datasheets/LOWPOWER-LP3992-33B5F_C324570.pdf" H 2925 1975 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1811081106_LOWPOWER-LP3992-33B5F_C324570.pdf" H 2925 1975 50  0001 C CNN
 	1    2925 1925
 	1    0    0    -1  
 $EndComp
@@ -336,5 +335,28 @@ F 3 "" H 1775 5500 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	4525 3975 5125 3975
+	4525 3975 4675 3975
+Wire Wire Line
+	4875 3975 5125 3975
+$Comp
+L Device:Jumper_NC_Small JP1
+U 1 1 5EA6AD24
+P 4775 3975
+F 0 "JP1" H 4775 4096 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 4775 4096 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm" H 4775 3975 50  0001 C CNN
+F 3 "~" H 4775 3975 50  0001 C CNN
+	1    4775 3975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5925 3775 6625 3775
+Text Label 6625 3775 2    50   ~ 0
+STATUS_CTRL
+Wire Wire Line
+	9875 3900 9175 3900
+Text Label 9175 3900 0    50   ~ 0
+STATUS_CTRL
+Text HLabel 9875 3900 2    50   Input ~ 0
+STATUS_PWM
 $EndSCHEMATC

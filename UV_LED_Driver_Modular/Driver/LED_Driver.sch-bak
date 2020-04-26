@@ -15,8 +15,6 @@ Comment4 ""
 $EndDescr
 Wire Wire Line
 	6800 3250 4625 3250
-Wire Wire Line
-	7100 3450 7100 3950
 $Comp
 L power:GNDS #PWR?
 U 1 1 5E9F2EE0
@@ -38,12 +36,8 @@ F 3 "" H 7100 4800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7100 4250 7100 4800
-Wire Wire Line
 	4625 3950 4625 3250
 Connection ~ 4625 3250
-Wire Wire Line
-	4625 3250 4475 3250
 $Comp
 L power:GNDS #PWR?
 U 1 1 5E9F2EF7
@@ -66,8 +60,6 @@ F 3 "" H 4625 4800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7100 2375 7100 3050
-Wire Wire Line
-	3400 3250 4175 3250
 Wire Wire Line
 	4625 2375 5650 2375
 Wire Wire Line
@@ -99,7 +91,7 @@ $EndComp
 $Comp
 L Device:R R?
 U 1 1 5E9F2EE6
-P 7100 4100
+P 4625 2050
 AR Path="/5E9F2EE6" Ref="R?"  Part="1" 
 AR Path="/5E9F0C12/5E9F2EE6" Ref="R16"  Part="1" 
 AR Path="/5EA0F07F/5E9F2EE6" Ref="R3"  Part="1" 
@@ -109,32 +101,12 @@ AR Path="/5E985E14/5E9F2EE6" Ref="R12"  Part="1"
 AR Path="/5EA57624/5E9F2EE6" Ref="R3"  Part="1" 
 AR Path="/5EA577FD/5E9F2EE6" Ref="R?"  Part="1" 
 AR Path="/5EA4121D/5E9F2EE6" Ref="R3"  Part="1" 
-F 0 "R3" H 7170 4146 50  0000 L CNN
-F 1 "R100" H 7170 4055 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-220-2_Vertical" V 7030 4100 50  0001 C CNN
-F 3 "~" H 7100 4100 50  0001 C CNN
-	1    7100 4100
+F 0 "R3" H 4695 2096 50  0000 L CNN
+F 1 "R100" H 4695 2005 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-2_Vertical" V 4555 2050 50  0001 C CNN
+F 3 "~" H 4625 2050 50  0001 C CNN
+	1    4625 2050
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5E9F2ED3
-P 4325 3250
-AR Path="/5E9F2ED3" Ref="R?"  Part="1" 
-AR Path="/5E9F0C12/5E9F2ED3" Ref="R14"  Part="1" 
-AR Path="/5EA0F07F/5E9F2ED3" Ref="R1"  Part="1" 
-AR Path="/5EA11B52/5E9F2ED3" Ref="R4"  Part="1" 
-AR Path="/5EA1244D/5E9F2ED3" Ref="R7"  Part="1" 
-AR Path="/5E985E14/5E9F2ED3" Ref="R10"  Part="1" 
-AR Path="/5EA57624/5E9F2ED3" Ref="R1"  Part="1" 
-AR Path="/5EA577FD/5E9F2ED3" Ref="R?"  Part="1" 
-AR Path="/5EA4121D/5E9F2ED3" Ref="R1"  Part="1" 
-F 0 "R1" V 4118 3250 50  0000 C CNN
-F 1 "100R" V 4209 3250 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4255 3250 50  0001 C CNN
-F 3 "~" H 4325 3250 50  0001 C CNN
-	1    4325 3250
-	0    1    1    0   
 $EndComp
 $Comp
 L Device:Q_NMOS_GDS Q?
@@ -157,7 +129,7 @@ F 3 "${KIPRJMOD}/../datasheets/IPP80N03S4L-03.pdf" H 7000 3250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4625 1550 4625 2375
+	4625 1550 4625 1900
 Wire Wire Line
 	4625 4250 4625 4800
 Text HLabel 7675 1475 2    50   Input ~ 0
@@ -172,4 +144,10 @@ Wire Wire Line
 	6150 2375 6150 1800
 Wire Wire Line
 	6150 1800 7675 1800
+Wire Wire Line
+	3400 3250 4625 3250
+Wire Wire Line
+	4625 2200 4625 2375
+Wire Wire Line
+	7100 3450 7100 4800
 $EndSCHEMATC

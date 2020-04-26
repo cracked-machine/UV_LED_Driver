@@ -124,7 +124,7 @@ AR Path="/5EA4121D/5E9F2ECC" Ref="Q1"  Part="1"
 F 0 "Q1" H 7204 3296 50  0000 L CNN
 F 1 "IPP80N03S4L-03" H 7204 3205 50  0000 L CNN
 F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 7200 3350 50  0001 C CNN
-F 3 "${KIPRJMOD}/../datasheets/IPP80N03S4L-03.pdf" H 7000 3250 50  0001 C CNN
+F 3 "https://www.infineon.com/dgdl/Infineon-IPB80N03S4L-02-DataSheet-v02_00-EN.pdf?fileId=5546d4626cb27db2016ccda79e541ca4" H 7000 3250 50  0001 C CNN
 	1    7000 3250
 	1    0    0    -1  
 $EndComp
