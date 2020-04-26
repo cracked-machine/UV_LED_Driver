@@ -20,6 +20,8 @@ F0 "UV_LED_Driver_Module2" 50
 F1 "../UV_LED_Driver_Modular/Driver/LED_Driver.sch" 50
 F2 "LED_CTRL" I L 7525 6250 50 
 F3 "+5V" I L 7525 5775 50 
+F4 "LED_ANODE_OUT" I R 9725 5750 50 
+F5 "LED_CATHODE_OUT" I R 9725 6375 50 
 $EndSheet
 $Sheet
 S 7550 7175 2200 1125
@@ -28,6 +30,8 @@ F0 "UV_LED_Driver_Module3" 50
 F1 "../UV_LED_Driver_Modular/Driver/LED_Driver.sch" 50
 F2 "LED_CTRL" I L 7550 7950 50 
 F3 "+5V" I L 7550 7575 50 
+F4 "LED_ANODE_OUT" I R 9750 7425 50 
+F5 "LED_CATHODE_OUT" I R 9750 8050 50 
 $EndSheet
 $Sheet
 S 7525 8875 2200 1125
@@ -36,6 +40,8 @@ F0 "UV_LED_Driver_Module4" 50
 F1 "../UV_LED_Driver_Modular/Driver/LED_Driver.sch" 50
 F2 "LED_CTRL" I L 7525 9650 50 
 F3 "+5V" I L 7525 9300 50 
+F4 "LED_ANODE_OUT" I R 9725 9150 50 
+F5 "LED_CATHODE_OUT" I R 9725 9775 50 
 $EndSheet
 Wire Wire Line
 	7525 9300 7175 9300
@@ -120,6 +126,8 @@ F0 "STD_LED_Driver_Module" 50
 F1 "../UV_LED_Driver_Modular/Driver/LED_Driver.sch" 50
 F2 "LED_CTRL" I L 7500 11400 50 
 F3 "+5V" I L 7500 11050 50 
+F4 "LED_ANODE_OUT" I R 9700 10875 50 
+F5 "LED_CATHODE_OUT" I R 9700 11500 50 
 $EndSheet
 Wire Wire Line
 	7500 11050 7150 11050
@@ -168,7 +176,7 @@ NO EXT CONN
 $Sheet
 S 1475 3750 1425 975 
 U 5EA5C4DC
-F0 "LED_Controller" 50
+F0 "LED_Controller_Module" 50
 F1 "../UV_LED_Driver_Modular/Controller/LED_Controller.sch" 50
 F2 "UV_LED_PWM" I R 2900 4200 50 
 F3 "LED_PWM" I R 2900 4425 50 
@@ -182,6 +190,8 @@ F0 "UV_LED_Driver_Module1" 50
 F1 "../UV_LED_Driver_Modular/Driver/LED_Driver.sch" 50
 F2 "LED_CTRL" I L 7550 4450 50 
 F3 "+5V" I L 7550 4075 50 
+F4 "LED_ANODE_OUT" I R 9750 3975 50 
+F5 "LED_CATHODE_OUT" I R 9750 4600 50 
 $EndSheet
 $Comp
 L power:PWR_FLAG #FLG0101
@@ -231,4 +241,99 @@ Wire Wire Line
 	3375 6225 3375 6700
 Wire Wire Line
 	3875 6225 3875 6700
+$Comp
+L Device:LED_Series D4
+U 1 1 5EA50B77
+P 10200 4275
+F 0 "D4" V 10246 4188 50  0000 R CNN
+F 1 "LED_Series" V 10155 4188 50  0000 R CNN
+F 2 "Connector_Molex:Molex_Mini-Fit_Jr_5569-02A2_2x01_P4.20mm_Horizontal" H 10100 4275 50  0001 C CNN
+F 3 "~" H 10100 4275 50  0001 C CNN
+	1    10200 4275
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9750 3975 10200 3975
+Wire Wire Line
+	10200 3975 10200 4025
+Wire Wire Line
+	9750 4600 10200 4600
+Wire Wire Line
+	10200 4600 10200 4525
+Wire Wire Line
+	9725 5750 10175 5750
+Wire Wire Line
+	10175 5750 10175 5800
+Wire Wire Line
+	9725 6375 10175 6375
+Wire Wire Line
+	10175 6375 10175 6300
+Wire Wire Line
+	9725 9150 10175 9150
+Wire Wire Line
+	10175 9150 10175 9200
+Wire Wire Line
+	9725 9775 10175 9775
+Wire Wire Line
+	10175 9775 10175 9700
+Wire Wire Line
+	9700 10875 10150 10875
+Wire Wire Line
+	10150 10875 10150 10925
+Wire Wire Line
+	9700 11500 10150 11500
+Wire Wire Line
+	10150 11500 10150 11425
+Wire Wire Line
+	9750 7425 10200 7425
+Wire Wire Line
+	10200 7425 10200 7475
+Wire Wire Line
+	9750 8050 10200 8050
+Wire Wire Line
+	10200 8050 10200 7975
+$Comp
+L Device:LED_Series D2
+U 1 1 5EA590C8
+P 10175 6050
+F 0 "D2" V 10221 5963 50  0000 R CNN
+F 1 "LED_Series" V 10130 5963 50  0000 R CNN
+F 2 "Connector_Molex:Molex_Mini-Fit_Jr_5569-02A2_2x01_P4.20mm_Horizontal" H 10075 6050 50  0001 C CNN
+F 3 "~" H 10075 6050 50  0001 C CNN
+	1    10175 6050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Series D5
+U 1 1 5EA59ECF
+P 10200 7725
+F 0 "D5" V 10246 7638 50  0000 R CNN
+F 1 "LED_Series" V 10155 7638 50  0000 R CNN
+F 2 "Connector_Molex:Molex_Mini-Fit_Jr_5569-02A2_2x01_P4.20mm_Horizontal" H 10100 7725 50  0001 C CNN
+F 3 "~" H 10100 7725 50  0001 C CNN
+	1    10200 7725
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Series D3
+U 1 1 5EA5A5FB
+P 10175 9450
+F 0 "D3" V 10221 9363 50  0000 R CNN
+F 1 "LED_Series" V 10130 9363 50  0000 R CNN
+F 2 "Connector_Molex:Molex_Mini-Fit_Jr_5569-02A2_2x01_P4.20mm_Horizontal" H 10075 9450 50  0001 C CNN
+F 3 "~" H 10075 9450 50  0001 C CNN
+	1    10175 9450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Series D1
+U 1 1 5EA5AF86
+P 10150 11175
+F 0 "D1" V 10196 11088 50  0000 R CNN
+F 1 "LED_Series" V 10105 11088 50  0000 R CNN
+F 2 "Connector_Molex:Molex_Mini-Fit_Jr_5569-02A2_2x01_P4.20mm_Horizontal" H 10050 11175 50  0001 C CNN
+F 3 "~" H 10050 11175 50  0001 C CNN
+	1    10150 11175
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
