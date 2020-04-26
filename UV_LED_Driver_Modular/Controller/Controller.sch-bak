@@ -51,9 +51,9 @@ Wire Wire Line
 Wire Wire Line
 	4550 3925 3500 3925
 Text Label 5975 2475 2    50   ~ 0
-UV_PWM
+UV_PWM_OUT
 Text Label 5975 3925 2    50   ~ 0
-LED_PWM
+LED_PWM_OUT
 Wire Wire Line
 	4200 1750 4200 1375
 $Comp
@@ -138,9 +138,9 @@ F 3 "" H 9775 3225 50  0001 C CNN
 $EndComp
 Connection ~ 9775 2700
 Text Label 7975 2800 0    50   ~ 0
-UV_PWM
+UV_PWM_OUT
 Text Label 9575 2800 2    50   ~ 0
-LED_PWM
+LED_PWM_OUT
 $Sheet
 S 1600 1400 1900 4475
 U 5EAB227C
@@ -358,7 +358,7 @@ $EndComp
 Wire Wire Line
 	4550 5550 3500 5550
 Text Label 5975 5550 2    50   ~ 0
-STATUS_PWM
+STATUS_PWM_OUT
 $Comp
 L Device:R R5
 U 1 1 5EA7D54D
@@ -439,7 +439,7 @@ F 3 "~" H 9175 4700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 8350 4700 0    50   ~ 0
-STATUS_PWM
+STATUS_PWM_OUT
 Wire Wire Line
 	8975 4700 8350 4700
 Wire Wire Line
