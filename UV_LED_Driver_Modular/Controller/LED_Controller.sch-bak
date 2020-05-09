@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 2
+Sheet 2 3
 Title ""
 Date ""
 Rev ""
@@ -29,7 +29,7 @@ U 1 1 5EA63B2F
 P 1800 6700
 F 0 "J2" H 1880 6742 50  0000 L CNN
 F 1 "Conn_01x05" H 1880 6651 50  0000 L CNN
-F 2 "Connector_Molex:Molex_KK-254_AE-6410-05A_1x05_P2.54mm_Vertical" H 1800 6700 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 1800 6700 50  0001 C CNN
 F 3 "~" H 1800 6700 50  0001 C CNN
 	1    1800 6700
 	-1   0    0    -1  
@@ -58,16 +58,16 @@ NRST
 Wire Wire Line
 	5775 2625 5325 2625
 Wire Wire Line
-	4975 2825 4975 3500
+	4625 2825 4625 3500
 $Comp
 L power:GNDS #PWR021
 U 1 1 5EA63B43
-P 4975 3500
-F 0 "#PWR021" H 4975 3250 50  0001 C CNN
-F 1 "GNDS" H 4980 3327 50  0000 C CNN
-F 2 "" H 4975 3500 50  0001 C CNN
-F 3 "" H 4975 3500 50  0001 C CNN
-	1    4975 3500
+P 4625 3500
+F 0 "#PWR021" H 4625 3250 50  0001 C CNN
+F 1 "GNDS" H 4630 3327 50  0000 C CNN
+F 2 "" H 4625 3500 50  0001 C CNN
+F 3 "" H 4625 3500 50  0001 C CNN
+	1    4625 3500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -99,7 +99,7 @@ U 1 1 5EA63B65
 P 2475 3650
 F 0 "SW1" H 2475 3885 50  0000 C CNN
 F 1 "SW_SPST" H 2475 3794 50  0000 C CNN
-F 2 "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 2475 3650 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2475 3650 50  0001 C CNN
 F 3 "~" H 2475 3650 50  0001 C CNN
 	1    2475 3650
 	1    0    0    -1  
@@ -222,19 +222,6 @@ $EndComp
 Wire Wire Line
 	2325 1350 2325 1150
 Connection ~ 2325 1350
-$Comp
-L Device:R_POT RV1
-U 1 1 5EA63BE5
-P 1775 5025
-F 0 "RV1" V 1660 5025 50  0000 C CNN
-F 1 "B10K" V 1569 5025 50  0000 C CNN
-F 2 "Connector_Molex:Molex_KK-254_AE-6410-03A_1x03_P2.54mm_Vertical" H 1775 5025 50  0001 C CNN
-F 3 "~" H 1775 5025 50  0001 C CNN
-	1    1775 5025
-	1    0    0    1   
-$EndComp
-Wire Wire Line
-	1775 4875 1775 4575
 Text HLabel 9850 3150 2    50   Input ~ 0
 LED_CTRL2
 Text HLabel 2325 1150 1    50   Input ~ 0
@@ -245,8 +232,6 @@ Text Label 3375 1825 0    50   ~ 0
 3V3
 Text HLabel 6275 2175 1    50   Input ~ 0
 3V3
-Text HLabel 1775 4575 1    50   Input ~ 0
-3V3
 Wire Wire Line
 	2450 6500 2450 6200
 Text HLabel 2450 6200 1    50   Input ~ 0
@@ -254,22 +239,7 @@ Text HLabel 2450 6200 1    50   Input ~ 0
 Wire Wire Line
 	1975 1550 1975 2625
 Wire Wire Line
-	1925 5025 2600 5025
-Wire Wire Line
-	1775 5175 1775 5500
-$Comp
-L power:GNDS #PWR0108
-U 1 1 5EB135AB
-P 1775 5500
-F 0 "#PWR0108" H 1775 5250 50  0001 C CNN
-F 1 "GNDS" H 1780 5327 50  0000 C CNN
-F 2 "" H 1775 5500 50  0001 C CNN
-F 3 "" H 1775 5500 50  0001 C CNN
-	1    1775 5500
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	4975 2825 5325 2825
+	4625 2825 5325 2825
 Wire Wire Line
 	5525 2825 5775 2825
 $Comp
@@ -364,23 +334,13 @@ Wire Wire Line
 NoConn ~ 6875 3025
 NoConn ~ 6875 3125
 NoConn ~ 6875 3225
-NoConn ~ 6875 3325
 NoConn ~ 6875 3825
-NoConn ~ 6875 4125
 NoConn ~ 5775 4125
 NoConn ~ 5775 4025
 NoConn ~ 5775 3925
 NoConn ~ 5775 3825
-NoConn ~ 5775 3725
-NoConn ~ 5775 3625
 NoConn ~ 5775 3325
 NoConn ~ 5775 3225
-Text Label 2600 5025 2    50   ~ 0
-LED_ADC
-Wire Wire Line
-	6875 2925 7825 2925
-Text Label 7825 2925 2    50   ~ 0
-LED_ADC
 Text HLabel 9850 3250 2    50   Input ~ 0
 LED_CTRL3
 Text HLabel 9850 3350 2    50   Input ~ 0
@@ -423,4 +383,47 @@ Text Label 3175 3650 2    50   ~ 0
 ENABLE_LED
 Wire Wire Line
 	3175 3650 2675 3650
+Wire Wire Line
+	5775 3625 5275 3625
+Text Label 5275 3625 0    50   ~ 0
+LED_CTRL5
+Wire Wire Line
+	9850 3450 9100 3450
+Text Label 9100 3450 0    50   ~ 0
+LED_CTRL5
+Text HLabel 9850 3450 2    50   Input ~ 0
+LED_CTRL5
+NoConn ~ 6875 3325
+$Sheet
+S 1600 4650 1075 750 
+U 5EB5FCB1
+F0 "RotaryEncoderNoSwitch" 50
+F1 "RotaryEncoderNoSwitch.sch" 50
+F2 "ENC_PIN_A" I R 2675 5025 50 
+F3 "ENC_PIN_B" I R 2675 5225 50 
+F4 "3V3_ENC" I R 2675 4825 50 
+$EndSheet
+Wire Wire Line
+	2675 5225 3175 5225
+Wire Wire Line
+	2675 5025 3175 5025
+Wire Wire Line
+	2675 4825 3175 4825
+Wire Wire Line
+	3175 4825 3175 4500
+Text HLabel 3175 4500 1    50   Input ~ 0
+3V3
+Text Label 3175 5025 2    50   ~ 0
+ENC_A
+Text Label 3175 5225 2    50   ~ 0
+ENC_B
+Wire Wire Line
+	6875 4125 7375 4125
+Wire Wire Line
+	5775 3725 5275 3725
+Text Label 5275 3725 0    50   ~ 0
+ENC_A
+Text Label 7375 4125 2    50   ~ 0
+ENC_B
+NoConn ~ 6875 2925
 $EndSCHEMATC
