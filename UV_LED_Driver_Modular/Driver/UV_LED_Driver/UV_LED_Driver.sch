@@ -120,7 +120,7 @@ Wire Wire Line
 Text Label 5425 3525 0    50   ~ 0
 LED_PWM_OUT4
 Wire Wire Line
-	3450 3375 4175 3375
+	2950 3375 2225 3375
 Wire Wire Line
 	3450 3475 4325 3475
 Wire Wire Line
@@ -135,7 +135,6 @@ Wire Wire Line
 Wire Wire Line
 	4325 3675 3450 3675
 Connection ~ 4325 3575
-NoConn ~ 2950 3375
 Wire Wire Line
 	2950 3475 1975 3475
 Wire Wire Line
@@ -281,6 +280,10 @@ Text Label 2225 3275 0    50   ~ 0
 LED_PWM_OUT1
 Text Label 4175 3175 2    50   ~ 0
 LED_PWM_OUT3
+Text Label 2225 3375 0    50   ~ 0
+LED_PWM_OUT5
+Wire Wire Line
+	3450 3375 4175 3375
 Text Label 4175 3375 2    50   ~ 0
 LED_PWM_OUT5
 $EndSCHEMATC

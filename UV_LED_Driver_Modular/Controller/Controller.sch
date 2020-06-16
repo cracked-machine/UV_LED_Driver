@@ -172,7 +172,6 @@ Wire Wire Line
 Connection ~ 1975 3250
 Wire Wire Line
 	1975 3350 1975 3250
-NoConn ~ 3450 3150
 Connection ~ 4525 3250
 $Comp
 L Connector_Generic:Conn_02x08_Odd_Even J3
@@ -190,8 +189,6 @@ Wire Wire Line
 	4525 3250 4525 3350
 Wire Wire Line
 	4525 3550 4525 3650
-Text Label 2225 3150 0    50   ~ 0
-LED_PWM_OUT5
 Text Label 2225 3050 0    50   ~ 0
 LED_PWM_OUT4
 Wire Wire Line
@@ -269,8 +266,6 @@ Wire Wire Line
 Wire Wire Line
 	3450 3250 4525 3250
 Wire Wire Line
-	2950 3150 2225 3150
-Wire Wire Line
 	2950 2950 2225 2950
 Wire Wire Line
 	3450 3050 4175 3050
@@ -293,5 +288,10 @@ $EndSheet
 Wire Wire Line
 	6875 3850 6150 3850
 Text Label 6150 3850 0    50   ~ 0
+LED_PWM_OUT5
+NoConn ~ 3450 3150
+Wire Wire Line
+	2950 3150 2225 3150
+Text Label 2225 3150 0    50   ~ 0
 LED_PWM_OUT5
 $EndSCHEMATC
