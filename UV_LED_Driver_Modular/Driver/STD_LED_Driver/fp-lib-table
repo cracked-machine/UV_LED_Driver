@@ -1,3 +1,0 @@
-(fp_lib_table
-  (lib (name Connector_Molex_MiniFitJnrExtra)(type KiCad)(uri ${KIPRJMOD}/../../../../KicadLibrary/footprint/CONNECTORS/POWER/MOLEX/MINI_FIT_JNR/Connector_Molex_MiniFitJnrExtra.pretty)(options "")(descr ""))
-)

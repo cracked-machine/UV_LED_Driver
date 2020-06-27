@@ -13,16 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Sheet
-S 8000 2750 1800 1650
-U 5EA57624
-F0 "UV_LED_DRIVER_MODULE" 50
-F1 "../LED_Driver.sch" 50
-F2 "LED_CTRL" I L 8000 3425 50 
-F3 "LED_ANODE_OUT" I L 8000 3650 50 
-F4 "LED_CATHODE_OUT" I L 8000 4275 50 
-F5 "VPP" I L 8000 3050 50 
-$EndSheet
 Text Label 7500 3425 0    50   ~ 0
 UV_PWM
 Wire Wire Line
@@ -108,16 +98,16 @@ F 3 "~" H 3250 3475 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	3450 3175 4175 3175
+	2950 3175 2225 3175
 Wire Wire Line
-	3450 3275 4175 3275
-Text Label 5425 3325 0    50   ~ 0
+	2950 3275 2225 3275
+Text Label 5425 3525 0    50   ~ 0
 LED_PWM_OUT2
 Wire Wire Line
 	5425 3325 6225 3325
 Wire Wire Line
 	6225 3225 5425 3225
-Text Label 5425 3525 0    50   ~ 0
+Text Label 5425 3325 0    50   ~ 0
 LED_PWM_OUT4
 Wire Wire Line
 	2950 3375 2225 3375
@@ -135,7 +125,6 @@ Wire Wire Line
 Wire Wire Line
 	4325 3675 3450 3675
 Connection ~ 4325 3575
-NoConn ~ 3450 3375
 Wire Wire Line
 	2950 3475 1975 3475
 Wire Wire Line
@@ -231,7 +220,7 @@ Wire Wire Line
 	6900 3325 6900 3425
 Wire Wire Line
 	6225 3425 5425 3425
-Text Label 5425 3225 0    50   ~ 0
+Text Label 5425 3625 0    50   ~ 0
 LED_PWM_OUT1
 Wire Wire Line
 	6225 3525 5425 3525
@@ -239,7 +228,7 @@ Text Label 5425 3425 0    50   ~ 0
 LED_PWM_OUT3
 Wire Wire Line
 	6225 3625 5425 3625
-Text Label 5425 3625 0    50   ~ 0
+Text Label 5425 3225 0    50   ~ 0
 LED_PWM_OUT5
 Wire Wire Line
 	8000 3425 6900 3425
@@ -255,9 +244,9 @@ F 3 "~" H 6525 3425 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	2950 3175 2225 3175
+	3450 3175 4175 3175
 Wire Wire Line
-	2950 3275 2225 3275
+	4175 3275 3450 3275
 $Comp
 L power:VPP #PWR0103
 U 1 1 5EB44346
@@ -273,14 +262,25 @@ Wire Wire Line
 	7525 2575 7525 3050
 Wire Wire Line
 	7525 3050 8000 3050
-Text Label 2225 3175 0    50   ~ 0
-LED_PWM_OUT2
-Text Label 4175 3275 2    50   ~ 0
-LED_PWM_OUT4
-Text Label 2225 3275 0    50   ~ 0
-LED_PWM_OUT1
 Text Label 4175 3175 2    50   ~ 0
+LED_PWM_OUT2
+Text Label 2225 3275 0    50   ~ 0
+LED_PWM_OUT4
+Text Label 4175 3275 2    50   ~ 0
+LED_PWM_OUT1
+Text Label 2225 3175 0    50   ~ 0
 LED_PWM_OUT3
+$Sheet
+S 8000 2750 1800 1650
+U 5EA57624
+F0 "UV_LED_DRIVER_MODULE" 50
+F1 "LED_Driver.sch" 50
+F2 "LED_CTRL" I L 8000 3425 50 
+F3 "LED_ANODE_OUT" I L 8000 3650 50 
+F4 "LED_CATHODE_OUT" I L 8000 4275 50 
+F5 "VPP" I L 8000 3050 50 
+$EndSheet
 Text Label 2225 3375 0    50   ~ 0
 LED_PWM_OUT5
+NoConn ~ 3450 3375
 $EndSCHEMATC

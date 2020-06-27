@@ -1,0 +1,298 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	5575 1675 5275 1675
+Connection ~ 5275 1675
+Wire Wire Line
+	6875 1675 8450 1675
+Wire Wire Line
+	6875 1675 6875 2050
+$Comp
+L Device:C C?
+U 1 1 5F0F4A6C
+P 6875 2200
+AR Path="/5EAB227C/5F0F4A6C" Ref="C?"  Part="1" 
+AR Path="/5EAB227C/5F0E8CE1/5F0F4A6C" Ref="C6"  Part="1" 
+F 0 "C6" H 6990 2246 50  0000 L CNN
+F 1 "1uF" H 6990 2155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 6913 2050 50  0001 C CNN
+F 3 "~" H 6875 2200 50  0001 C CNN
+	1    6875 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5F0F4A72
+P 5275 2200
+AR Path="/5EAB227C/5F0F4A72" Ref="C?"  Part="1" 
+AR Path="/5EAB227C/5F0E8CE1/5F0F4A72" Ref="C3"  Part="1" 
+F 0 "C3" H 5390 2246 50  0000 L CNN
+F 1 "1uF" H 5390 2155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5313 2050 50  0001 C CNN
+F 3 "~" H 5275 2200 50  0001 C CNN
+	1    5275 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5275 2350 5275 2475
+$Comp
+L power:GNDS #PWR?
+U 1 1 5F0F4A79
+P 5275 2475
+AR Path="/5EAB227C/5F0F4A79" Ref="#PWR?"  Part="1" 
+AR Path="/5EAB227C/5F0E8CE1/5F0F4A79" Ref="#PWR08"  Part="1" 
+F 0 "#PWR08" H 5275 2225 50  0001 C CNN
+F 1 "GNDS" H 5280 2302 50  0000 C CNN
+F 2 "" H 5275 2475 50  0001 C CNN
+F 3 "" H 5275 2475 50  0001 C CNN
+	1    5275 2475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6875 2350 6875 2475
+$Comp
+L power:GNDS #PWR?
+U 1 1 5F0F4A80
+P 6875 2475
+AR Path="/5EAB227C/5F0F4A80" Ref="#PWR?"  Part="1" 
+AR Path="/5EAB227C/5F0E8CE1/5F0F4A80" Ref="#PWR014"  Part="1" 
+F 0 "#PWR014" H 6875 2225 50  0001 C CNN
+F 1 "GNDS" H 6880 2302 50  0000 C CNN
+F 2 "" H 6875 2475 50  0001 C CNN
+F 3 "" H 6875 2475 50  0001 C CNN
+	1    6875 2475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5875 1975 5875 2475
+$Comp
+L power:GNDS #PWR?
+U 1 1 5F0F4A87
+P 5875 2475
+AR Path="/5EAB227C/5F0F4A87" Ref="#PWR?"  Part="1" 
+AR Path="/5EAB227C/5F0E8CE1/5F0F4A87" Ref="#PWR011"  Part="1" 
+F 0 "#PWR011" H 5875 2225 50  0001 C CNN
+F 1 "GNDS" H 5880 2302 50  0000 C CNN
+F 2 "" H 5875 2475 50  0001 C CNN
+F 3 "" H 5875 2475 50  0001 C CNN
+	1    5875 2475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5275 1200 2825 1200
+Wire Wire Line
+	5275 1200 5275 1675
+Text HLabel 8450 1675 2    50   Input ~ 0
+PS_3V3
+Text Label 6325 1675 0    50   ~ 0
+3V3
+Wire Wire Line
+	5275 1675 5275 2050
+$Comp
+L Regulator_Linear:L78L33_SOT89 U?
+U 1 1 5F0F4AA4
+P 5875 1675
+AR Path="/5EAB227C/5F0F4AA4" Ref="U?"  Part="1" 
+AR Path="/5EAB227C/5F0E8CE1/5F0F4AA4" Ref="U5"  Part="1" 
+F 0 "U5" H 5875 1917 50  0000 C CNN
+F 1 "L78L33_SOT89" H 5875 1826 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-89-3" H 5875 1875 50  0001 C CIN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/15/55/e5/aa/23/5b/43/fd/CD00000446.pdf/files/CD00000446.pdf/jcr:content/translations/en.CD00000446.pdf" H 5875 1625 50  0001 C CNN
+	1    5875 1675
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:LD1117S50TR_SOT223 U?
+U 1 1 5F0F4AAA
+P 5750 3600
+AR Path="/5EAB227C/5F0F4AAA" Ref="U?"  Part="1" 
+AR Path="/5EAB227C/5F0E8CE1/5F0F4AAA" Ref="U2"  Part="1" 
+F 0 "U2" H 5750 3842 50  0000 C CNN
+F 1 "LD1117S50TR_SOT223" H 5750 3751 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 5750 3800 50  0001 C CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf" H 5850 3350 50  0001 C CNN
+	1    5750 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 3600 5175 3600
+Text HLabel 2850 3600 0    50   Input ~ 0
+PS_VPP
+Wire Wire Line
+	5750 3900 5750 4300
+$Comp
+L power:GNDS #PWR?
+U 1 1 5F0F4AB4
+P 5750 4400
+AR Path="/5EAB227C/5F0F4AB4" Ref="#PWR?"  Part="1" 
+AR Path="/5EAB227C/5F0E8CE1/5F0F4AB4" Ref="#PWR09"  Part="1" 
+F 0 "#PWR09" H 5750 4150 50  0001 C CNN
+F 1 "GNDS" H 5755 4227 50  0000 C CNN
+F 2 "" H 5750 4400 50  0001 C CNN
+F 3 "" H 5750 4400 50  0001 C CNN
+	1    5750 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 3600 6450 3600
+Wire Wire Line
+	5175 3600 5175 3775
+$Comp
+L Device:C C?
+U 1 1 5F0F4ABE
+P 5175 3925
+AR Path="/5EAB227C/5F0F4ABE" Ref="C?"  Part="1" 
+AR Path="/5EAB227C/5F0E8CE1/5F0F4ABE" Ref="C1"  Part="1" 
+F 0 "C1" H 5290 3971 50  0000 L CNN
+F 1 "100nF" H 5290 3880 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5213 3775 50  0001 C CNN
+F 3 "~" H 5175 3925 50  0001 C CNN
+	1    5175 3925
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 3600 6450 3800
+$Comp
+L Device:C C?
+U 1 1 5F0F4AC5
+P 6450 3950
+AR Path="/5EAB227C/5F0F4AC5" Ref="C?"  Part="1" 
+AR Path="/5EAB227C/5F0E8CE1/5F0F4AC5" Ref="C4"  Part="1" 
+F 0 "C4" H 6565 3996 50  0000 L CNN
+F 1 "10uF" H 6565 3905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 6488 3800 50  0001 C CNN
+F 3 "~" H 6450 3950 50  0001 C CNN
+	1    6450 3950
+	1    0    0    -1  
+$EndComp
+Connection ~ 5175 3600
+Connection ~ 6450 3600
+Wire Wire Line
+	5175 4075 5175 4300
+Wire Wire Line
+	5175 4300 5750 4300
+Connection ~ 5750 4300
+Wire Wire Line
+	5750 4300 5750 4400
+Wire Wire Line
+	5750 4300 6450 4300
+Wire Wire Line
+	6450 4300 6450 4100
+$Comp
+L Regulator_Linear:LD1117S50TR_SOT223 U?
+U 1 1 5F0F4AD5
+P 5725 5100
+AR Path="/5EAB227C/5F0F4AD5" Ref="U?"  Part="1" 
+AR Path="/5EAB227C/5F0E8CE1/5F0F4AD5" Ref="U4"  Part="1" 
+F 0 "U4" H 5725 5342 50  0000 C CNN
+F 1 "LD1117S50TR_SOT223" H 5725 5251 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 5725 5300 50  0001 C CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf" H 5825 4850 50  0001 C CNN
+	1    5725 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5425 5100 5150 5100
+Text HLabel 2800 5100 0    50   Input ~ 0
+PS_VPP
+Wire Wire Line
+	5725 5400 5725 5800
+$Comp
+L power:GNDS #PWR?
+U 1 1 5F0F4ADF
+P 5725 5900
+AR Path="/5EAB227C/5F0F4ADF" Ref="#PWR?"  Part="1" 
+AR Path="/5EAB227C/5F0E8CE1/5F0F4ADF" Ref="#PWR010"  Part="1" 
+F 0 "#PWR010" H 5725 5650 50  0001 C CNN
+F 1 "GNDS" H 5730 5727 50  0000 C CNN
+F 2 "" H 5725 5900 50  0001 C CNN
+F 3 "" H 5725 5900 50  0001 C CNN
+	1    5725 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6025 5100 6425 5100
+Wire Wire Line
+	5150 5100 5150 5275
+$Comp
+L Device:C C?
+U 1 1 5F0F4AE9
+P 5150 5425
+AR Path="/5EAB227C/5F0F4AE9" Ref="C?"  Part="1" 
+AR Path="/5EAB227C/5F0E8CE1/5F0F4AE9" Ref="C2"  Part="1" 
+F 0 "C2" H 5265 5471 50  0000 L CNN
+F 1 "100nF" H 5265 5380 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5188 5275 50  0001 C CNN
+F 3 "~" H 5150 5425 50  0001 C CNN
+	1    5150 5425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6425 5100 6425 5300
+$Comp
+L Device:C C?
+U 1 1 5F0F4AF0
+P 6425 5450
+AR Path="/5EAB227C/5F0F4AF0" Ref="C?"  Part="1" 
+AR Path="/5EAB227C/5F0E8CE1/5F0F4AF0" Ref="C5"  Part="1" 
+F 0 "C5" H 6540 5496 50  0000 L CNN
+F 1 "10uF" H 6540 5405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 6463 5300 50  0001 C CNN
+F 3 "~" H 6425 5450 50  0001 C CNN
+	1    6425 5450
+	1    0    0    -1  
+$EndComp
+Connection ~ 5150 5100
+Connection ~ 6425 5100
+Wire Wire Line
+	5150 5575 5150 5800
+Wire Wire Line
+	5150 5800 5725 5800
+Connection ~ 5725 5800
+Wire Wire Line
+	5725 5800 5725 5900
+Wire Wire Line
+	5725 5800 6425 5800
+Wire Wire Line
+	6425 5800 6425 5600
+Text HLabel 8200 3600 2    50   Input ~ 0
+PS_VPP_REG_LCD
+Text HLabel 8300 5100 2    50   Input ~ 0
+PS_VPP_REG_PIEZO
+Wire Wire Line
+	6450 3600 8200 3600
+Wire Wire Line
+	6425 5100 8300 5100
+Connection ~ 6875 1675
+Wire Wire Line
+	6175 1675 6875 1675
+Wire Wire Line
+	2850 3600 5175 3600
+Wire Wire Line
+	2800 5100 5150 5100
+Text HLabel 2825 1200 0    50   Input ~ 0
+PS_VPP
+Wire Notes Line
+	1800 3025 9775 3025
+Wire Notes Line
+	9775 3025 9775 6400
+Wire Notes Line
+	9775 6400 1775 6400
+Wire Notes Line
+	1775 6400 1775 3025
+Text Notes 1925 3225 0    50   ~ 0
+FIT WHEN VPP > 5V
+$EndSCHEMATC

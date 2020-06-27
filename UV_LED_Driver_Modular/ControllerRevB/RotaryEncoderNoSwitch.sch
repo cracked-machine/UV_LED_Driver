@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 3
+Sheet 3 4
 Title ""
 Date ""
 Rev ""
@@ -44,7 +44,7 @@ U 1 1 5EB61274
 P 5375 4150
 F 0 "R2" H 5445 4196 50  0000 L CNN
 F 1 "10K" H 5445 4105 50  0000 L CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 5305 4150 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5305 4150 50  0001 C CNN
 F 3 "~" H 5375 4150 50  0001 C CNN
 	1    5375 4150
 	1    0    0    -1  
@@ -62,7 +62,7 @@ U 1 1 5EB61E3E
 P 6550 4150
 F 0 "R3" H 6620 4196 50  0000 L CNN
 F 1 "10K" H 6620 4105 50  0000 L CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 6480 4150 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6480 4150 50  0001 C CNN
 F 3 "~" H 6550 4150 50  0001 C CNN
 	1    6550 4150
 	1    0    0    -1  
