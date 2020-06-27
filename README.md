@@ -18,4 +18,5 @@ This is a modular design that drives 4 panels of UV LEDS and 1 standard LED stri
 
 Module |Front |Back
 :-----:|:-----:|:-----:
-
+Controller|![](UV_LED_Driver_Modular/ControllerRevB/docs/ControllerFront.png)|![](UV_LED_Driver_Modular/ControllerRevB/docs/ControllerBack.png)
+Driver|![](UV_LED_Driver_Modular/Driver/UV_LED_Driver/docs/UV_LED_Driver_Front.png)|![](UV_LED_Driver_Modular/Driver/UV_LED_Driver/docs/UV_LED_Driver_Back.png)
