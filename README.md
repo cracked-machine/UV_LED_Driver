@@ -16,6 +16,6 @@ This is a modular design that drives 4 panels of UV LEDS and 1 standard LED stri
 
 - **OOTB operation runs on 5VDC. However, if higher voltage is required regulators U2 and U4 can be populated. These protect the LCD and Buzzer (JP3 and JP1 must be ON, JP2 and JP4 must be OFF)**
 
-<center>Module |<center>Front | <center>Back
+Module |Front |Back
 :-----:|:-----:|:-----:
 
