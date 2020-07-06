@@ -670,10 +670,10 @@ F 3 "~" H 10400 4125 50  0001 C CNN
 $EndComp
 Connection ~ 10200 4125
 $Comp
-L Connector_Generic:Conn_01x01 J?
+L Connector_Generic:Conn_01x01 J6
 U 1 1 5F2E2277
 P 10400 3875
-F 0 "J?" H 10480 3917 50  0000 L CNN
+F 0 "J6" H 10480 3917 50  0000 L CNN
 F 1 "Conn_01x01" H 10480 3826 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 10400 3875 50  0001 C CNN
 F 3 "~" H 10400 3875 50  0001 C CNN
