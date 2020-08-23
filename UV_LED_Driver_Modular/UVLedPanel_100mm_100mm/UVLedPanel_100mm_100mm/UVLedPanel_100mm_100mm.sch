@@ -1,0 +1,624 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "UV LED Panel"
+Date "2020-08-23"
+Rev "A"
+Comp ""
+Comment1 "Number of LEDS: 16"
+Comment2 "LED Package: PLCC-2"
+Comment3 "Panel Dimensions: 100mm x 100mm"
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	5100 1850 5650 1850
+Wire Wire Line
+	5100 2450 5650 2450
+Wire Wire Line
+	5100 3050 5650 3050
+Wire Wire Line
+	5100 1250 5100 1850
+Connection ~ 5100 1850
+Wire Wire Line
+	5100 1850 5100 2450
+Connection ~ 5100 2450
+Wire Wire Line
+	5100 2450 5100 3050
+Wire Wire Line
+	2350 3500 3200 3500
+Wire Wire Line
+	6550 1250 6550 1850
+Wire Wire Line
+	5950 3050 6550 3050
+Connection ~ 6550 3050
+Wire Wire Line
+	5950 2450 6550 2450
+Connection ~ 6550 2450
+Wire Wire Line
+	6550 2450 6550 3050
+Wire Wire Line
+	5950 1850 6550 1850
+Connection ~ 6550 1850
+Wire Wire Line
+	6550 1850 6550 2450
+$Comp
+L Device:LED D1
+U 1 1 5F4297BF
+P 5800 1250
+AR Path="/5F4297BF" Ref="D1"  Part="1" 
+AR Path="/5F425588/5F4297BF" Ref="D?"  Part="1" 
+AR Path="/5F427149/5F4297BF" Ref="D?"  Part="1" 
+AR Path="/5F4272B6/5F4297BF" Ref="D?"  Part="1" 
+AR Path="/5F4273E5/5F4297BF" Ref="D?"  Part="1" 
+AR Path="/5F4274E1/5F4297BF" Ref="D?"  Part="1" 
+AR Path="/5F427655/5F4297BF" Ref="D?"  Part="1" 
+F 0 "D1" H 5793 995 50  0000 C CNN
+F 1 "LED" H 5793 1086 50  0000 C CNN
+F 2 "LED_SMD:LED_PLCC-2" H 5800 1250 50  0001 C CNN
+F 3 "~" H 5800 1250 50  0001 C CNN
+	1    5800 1250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2350 3300 3200 3300
+Wire Wire Line
+	5100 1250 5650 1250
+Wire Wire Line
+	5950 1250 6550 1250
+$Comp
+L power:VPP #PWR0101
+U 1 1 5F431A16
+P 3550 3200
+F 0 "#PWR0101" H 3550 3050 50  0001 C CNN
+F 1 "VPP" H 3565 3373 50  0000 C CNN
+F 2 "" H 3550 3200 50  0001 C CNN
+F 3 "" H 3550 3200 50  0001 C CNN
+	1    3550 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDS #PWR0102
+U 1 1 5F431C2F
+P 3550 3600
+F 0 "#PWR0102" H 3550 3350 50  0001 C CNN
+F 1 "GNDS" H 3555 3427 50  0000 C CNN
+F 2 "" H 3550 3600 50  0001 C CNN
+F 3 "" H 3550 3600 50  0001 C CNN
+	1    3550 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 3500 3550 3600
+Wire Wire Line
+	3550 3200 3550 3300
+$Comp
+L power:VPP #PWR0103
+U 1 1 5F43271A
+P 5100 1200
+F 0 "#PWR0103" H 5100 1050 50  0001 C CNN
+F 1 "VPP" H 5115 1373 50  0000 C CNN
+F 2 "" H 5100 1200 50  0001 C CNN
+F 3 "" H 5100 1200 50  0001 C CNN
+	1    5100 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 1200 5100 1250
+Connection ~ 5100 1250
+$Comp
+L power:GNDS #PWR0104
+U 1 1 5F4331B3
+P 6550 3250
+F 0 "#PWR0104" H 6550 3000 50  0001 C CNN
+F 1 "GNDS" H 6555 3077 50  0000 C CNN
+F 2 "" H 6550 3250 50  0001 C CNN
+F 3 "" H 6550 3250 50  0001 C CNN
+	1    6550 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 5F449736
+P 5800 1850
+AR Path="/5F449736" Ref="D2"  Part="1" 
+AR Path="/5F425588/5F449736" Ref="D?"  Part="1" 
+AR Path="/5F427149/5F449736" Ref="D?"  Part="1" 
+AR Path="/5F4272B6/5F449736" Ref="D?"  Part="1" 
+AR Path="/5F4273E5/5F449736" Ref="D?"  Part="1" 
+AR Path="/5F4274E1/5F449736" Ref="D?"  Part="1" 
+AR Path="/5F427655/5F449736" Ref="D?"  Part="1" 
+F 0 "D2" H 5793 1595 50  0000 C CNN
+F 1 "LED" H 5793 1686 50  0000 C CNN
+F 2 "LED_SMD:LED_PLCC-2" H 5800 1850 50  0001 C CNN
+F 3 "~" H 5800 1850 50  0001 C CNN
+	1    5800 1850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D3
+U 1 1 5F449DDB
+P 5800 2450
+AR Path="/5F449DDB" Ref="D3"  Part="1" 
+AR Path="/5F425588/5F449DDB" Ref="D?"  Part="1" 
+AR Path="/5F427149/5F449DDB" Ref="D?"  Part="1" 
+AR Path="/5F4272B6/5F449DDB" Ref="D?"  Part="1" 
+AR Path="/5F4273E5/5F449DDB" Ref="D?"  Part="1" 
+AR Path="/5F4274E1/5F449DDB" Ref="D?"  Part="1" 
+AR Path="/5F427655/5F449DDB" Ref="D?"  Part="1" 
+F 0 "D3" H 5793 2195 50  0000 C CNN
+F 1 "LED" H 5793 2286 50  0000 C CNN
+F 2 "LED_SMD:LED_PLCC-2" H 5800 2450 50  0001 C CNN
+F 3 "~" H 5800 2450 50  0001 C CNN
+	1    5800 2450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D4
+U 1 1 5F44A38B
+P 5800 3050
+AR Path="/5F44A38B" Ref="D4"  Part="1" 
+AR Path="/5F425588/5F44A38B" Ref="D?"  Part="1" 
+AR Path="/5F427149/5F44A38B" Ref="D?"  Part="1" 
+AR Path="/5F4272B6/5F44A38B" Ref="D?"  Part="1" 
+AR Path="/5F4273E5/5F44A38B" Ref="D?"  Part="1" 
+AR Path="/5F4274E1/5F44A38B" Ref="D?"  Part="1" 
+AR Path="/5F427655/5F44A38B" Ref="D?"  Part="1" 
+F 0 "D4" H 5793 2795 50  0000 C CNN
+F 1 "LED" H 5793 2886 50  0000 C CNN
+F 2 "LED_SMD:LED_PLCC-2" H 5800 3050 50  0001 C CNN
+F 3 "~" H 5800 3050 50  0001 C CNN
+	1    5800 3050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J1
+U 1 1 5F464DF3
+P 2150 3300
+F 0 "J1" H 2250 3550 50  0000 C CNN
+F 1 "Conn_01x01" H 2068 3426 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_4.0x4.0mm" H 2150 3300 50  0001 C CNN
+F 3 "~" H 2150 3300 50  0001 C CNN
+	1    2150 3300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 J2
+U 1 1 5F4656E0
+P 2150 3500
+F 0 "J2" H 2250 3600 50  0000 C CNN
+F 1 "Conn_01x01" H 2100 3700 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_4.0x4.0mm" H 2150 3500 50  0001 C CNN
+F 3 "~" H 2150 3500 50  0001 C CNN
+	1    2150 3500
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5F468298
+P 3200 3300
+F 0 "#FLG0101" H 3200 3375 50  0001 C CNN
+F 1 "PWR_FLAG" H 3200 3473 50  0000 C CNN
+F 2 "" H 3200 3300 50  0001 C CNN
+F 3 "~" H 3200 3300 50  0001 C CNN
+	1    3200 3300
+	1    0    0    -1  
+$EndComp
+Connection ~ 3200 3300
+Wire Wire Line
+	3200 3300 3550 3300
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5F46A68A
+P 3200 3500
+F 0 "#FLG0102" H 3200 3575 50  0001 C CNN
+F 1 "PWR_FLAG" H 3200 3673 50  0000 C CNN
+F 2 "" H 3200 3500 50  0001 C CNN
+F 3 "~" H 3200 3500 50  0001 C CNN
+	1    3200 3500
+	-1   0    0    1   
+$EndComp
+Connection ~ 3200 3500
+Wire Wire Line
+	3200 3500 3550 3500
+Wire Wire Line
+	6550 3050 6550 3250
+Wire Wire Line
+	8300 1850 8850 1850
+Wire Wire Line
+	8300 2450 8850 2450
+Wire Wire Line
+	8300 3050 8850 3050
+Wire Wire Line
+	8300 1250 8300 1850
+Connection ~ 8300 1850
+Wire Wire Line
+	8300 1850 8300 2450
+Connection ~ 8300 2450
+Wire Wire Line
+	8300 2450 8300 3050
+Wire Wire Line
+	9750 1250 9750 1850
+Wire Wire Line
+	9150 3050 9750 3050
+Connection ~ 9750 3050
+Wire Wire Line
+	9150 2450 9750 2450
+Connection ~ 9750 2450
+Wire Wire Line
+	9750 2450 9750 3050
+Wire Wire Line
+	9150 1850 9750 1850
+Connection ~ 9750 1850
+Wire Wire Line
+	9750 1850 9750 2450
+$Comp
+L Device:LED D9
+U 1 1 5F4A079B
+P 9000 1250
+AR Path="/5F4A079B" Ref="D9"  Part="1" 
+AR Path="/5F425588/5F4A079B" Ref="D?"  Part="1" 
+AR Path="/5F427149/5F4A079B" Ref="D?"  Part="1" 
+AR Path="/5F4272B6/5F4A079B" Ref="D?"  Part="1" 
+AR Path="/5F4273E5/5F4A079B" Ref="D?"  Part="1" 
+AR Path="/5F4274E1/5F4A079B" Ref="D?"  Part="1" 
+AR Path="/5F427655/5F4A079B" Ref="D?"  Part="1" 
+F 0 "D9" H 8993 995 50  0000 C CNN
+F 1 "LED" H 8993 1086 50  0000 C CNN
+F 2 "LED_SMD:LED_PLCC-2" H 9000 1250 50  0001 C CNN
+F 3 "~" H 9000 1250 50  0001 C CNN
+	1    9000 1250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8300 1250 8850 1250
+Wire Wire Line
+	9150 1250 9750 1250
+$Comp
+L power:VPP #PWR0105
+U 1 1 5F4A07A3
+P 8300 1200
+F 0 "#PWR0105" H 8300 1050 50  0001 C CNN
+F 1 "VPP" H 8315 1373 50  0000 C CNN
+F 2 "" H 8300 1200 50  0001 C CNN
+F 3 "" H 8300 1200 50  0001 C CNN
+	1    8300 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 1200 8300 1250
+Connection ~ 8300 1250
+$Comp
+L power:GNDS #PWR0106
+U 1 1 5F4A07AB
+P 9750 3250
+F 0 "#PWR0106" H 9750 3000 50  0001 C CNN
+F 1 "GNDS" H 9755 3077 50  0000 C CNN
+F 2 "" H 9750 3250 50  0001 C CNN
+F 3 "" H 9750 3250 50  0001 C CNN
+	1    9750 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D10
+U 1 1 5F4A07B1
+P 9000 1850
+AR Path="/5F4A07B1" Ref="D10"  Part="1" 
+AR Path="/5F425588/5F4A07B1" Ref="D?"  Part="1" 
+AR Path="/5F427149/5F4A07B1" Ref="D?"  Part="1" 
+AR Path="/5F4272B6/5F4A07B1" Ref="D?"  Part="1" 
+AR Path="/5F4273E5/5F4A07B1" Ref="D?"  Part="1" 
+AR Path="/5F4274E1/5F4A07B1" Ref="D?"  Part="1" 
+AR Path="/5F427655/5F4A07B1" Ref="D?"  Part="1" 
+F 0 "D10" H 8993 1595 50  0000 C CNN
+F 1 "LED" H 8993 1686 50  0000 C CNN
+F 2 "LED_SMD:LED_PLCC-2" H 9000 1850 50  0001 C CNN
+F 3 "~" H 9000 1850 50  0001 C CNN
+	1    9000 1850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D11
+U 1 1 5F4A07B7
+P 9000 2450
+AR Path="/5F4A07B7" Ref="D11"  Part="1" 
+AR Path="/5F425588/5F4A07B7" Ref="D?"  Part="1" 
+AR Path="/5F427149/5F4A07B7" Ref="D?"  Part="1" 
+AR Path="/5F4272B6/5F4A07B7" Ref="D?"  Part="1" 
+AR Path="/5F4273E5/5F4A07B7" Ref="D?"  Part="1" 
+AR Path="/5F4274E1/5F4A07B7" Ref="D?"  Part="1" 
+AR Path="/5F427655/5F4A07B7" Ref="D?"  Part="1" 
+F 0 "D11" H 8993 2195 50  0000 C CNN
+F 1 "LED" H 8993 2286 50  0000 C CNN
+F 2 "LED_SMD:LED_PLCC-2" H 9000 2450 50  0001 C CNN
+F 3 "~" H 9000 2450 50  0001 C CNN
+	1    9000 2450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D12
+U 1 1 5F4A07BD
+P 9000 3050
+AR Path="/5F4A07BD" Ref="D12"  Part="1" 
+AR Path="/5F425588/5F4A07BD" Ref="D?"  Part="1" 
+AR Path="/5F427149/5F4A07BD" Ref="D?"  Part="1" 
+AR Path="/5F4272B6/5F4A07BD" Ref="D?"  Part="1" 
+AR Path="/5F4273E5/5F4A07BD" Ref="D?"  Part="1" 
+AR Path="/5F4274E1/5F4A07BD" Ref="D?"  Part="1" 
+AR Path="/5F427655/5F4A07BD" Ref="D?"  Part="1" 
+F 0 "D12" H 8993 2795 50  0000 C CNN
+F 1 "LED" H 8993 2886 50  0000 C CNN
+F 2 "LED_SMD:LED_PLCC-2" H 9000 3050 50  0001 C CNN
+F 3 "~" H 9000 3050 50  0001 C CNN
+	1    9000 3050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9750 3050 9750 3250
+Wire Wire Line
+	5100 4650 5650 4650
+Wire Wire Line
+	5100 5250 5650 5250
+Wire Wire Line
+	5100 5850 5650 5850
+Wire Wire Line
+	5100 4050 5100 4650
+Connection ~ 5100 4650
+Wire Wire Line
+	5100 4650 5100 5250
+Connection ~ 5100 5250
+Wire Wire Line
+	5100 5250 5100 5850
+Wire Wire Line
+	6550 4050 6550 4650
+Wire Wire Line
+	5950 5850 6550 5850
+Connection ~ 6550 5850
+Wire Wire Line
+	5950 5250 6550 5250
+Connection ~ 6550 5250
+Wire Wire Line
+	6550 5250 6550 5850
+Wire Wire Line
+	5950 4650 6550 4650
+Connection ~ 6550 4650
+Wire Wire Line
+	6550 4650 6550 5250
+$Comp
+L Device:LED D5
+U 1 1 5F4A63F1
+P 5800 4050
+AR Path="/5F4A63F1" Ref="D5"  Part="1" 
+AR Path="/5F425588/5F4A63F1" Ref="D?"  Part="1" 
+AR Path="/5F427149/5F4A63F1" Ref="D?"  Part="1" 
+AR Path="/5F4272B6/5F4A63F1" Ref="D?"  Part="1" 
+AR Path="/5F4273E5/5F4A63F1" Ref="D?"  Part="1" 
+AR Path="/5F4274E1/5F4A63F1" Ref="D?"  Part="1" 
+AR Path="/5F427655/5F4A63F1" Ref="D?"  Part="1" 
+F 0 "D5" H 5793 3795 50  0000 C CNN
+F 1 "LED" H 5793 3886 50  0000 C CNN
+F 2 "LED_SMD:LED_PLCC-2" H 5800 4050 50  0001 C CNN
+F 3 "~" H 5800 4050 50  0001 C CNN
+	1    5800 4050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5100 4050 5650 4050
+Wire Wire Line
+	5950 4050 6550 4050
+$Comp
+L power:VPP #PWR0107
+U 1 1 5F4A63F9
+P 5100 4000
+F 0 "#PWR0107" H 5100 3850 50  0001 C CNN
+F 1 "VPP" H 5115 4173 50  0000 C CNN
+F 2 "" H 5100 4000 50  0001 C CNN
+F 3 "" H 5100 4000 50  0001 C CNN
+	1    5100 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 4000 5100 4050
+Connection ~ 5100 4050
+$Comp
+L power:GNDS #PWR0108
+U 1 1 5F4A6401
+P 6550 6050
+F 0 "#PWR0108" H 6550 5800 50  0001 C CNN
+F 1 "GNDS" H 6555 5877 50  0000 C CNN
+F 2 "" H 6550 6050 50  0001 C CNN
+F 3 "" H 6550 6050 50  0001 C CNN
+	1    6550 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D6
+U 1 1 5F4A6407
+P 5800 4650
+AR Path="/5F4A6407" Ref="D6"  Part="1" 
+AR Path="/5F425588/5F4A6407" Ref="D?"  Part="1" 
+AR Path="/5F427149/5F4A6407" Ref="D?"  Part="1" 
+AR Path="/5F4272B6/5F4A6407" Ref="D?"  Part="1" 
+AR Path="/5F4273E5/5F4A6407" Ref="D?"  Part="1" 
+AR Path="/5F4274E1/5F4A6407" Ref="D?"  Part="1" 
+AR Path="/5F427655/5F4A6407" Ref="D?"  Part="1" 
+F 0 "D6" H 5793 4395 50  0000 C CNN
+F 1 "LED" H 5793 4486 50  0000 C CNN
+F 2 "LED_SMD:LED_PLCC-2" H 5800 4650 50  0001 C CNN
+F 3 "~" H 5800 4650 50  0001 C CNN
+	1    5800 4650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D7
+U 1 1 5F4A640D
+P 5800 5250
+AR Path="/5F4A640D" Ref="D7"  Part="1" 
+AR Path="/5F425588/5F4A640D" Ref="D?"  Part="1" 
+AR Path="/5F427149/5F4A640D" Ref="D?"  Part="1" 
+AR Path="/5F4272B6/5F4A640D" Ref="D?"  Part="1" 
+AR Path="/5F4273E5/5F4A640D" Ref="D?"  Part="1" 
+AR Path="/5F4274E1/5F4A640D" Ref="D?"  Part="1" 
+AR Path="/5F427655/5F4A640D" Ref="D?"  Part="1" 
+F 0 "D7" H 5793 4995 50  0000 C CNN
+F 1 "LED" H 5793 5086 50  0000 C CNN
+F 2 "LED_SMD:LED_PLCC-2" H 5800 5250 50  0001 C CNN
+F 3 "~" H 5800 5250 50  0001 C CNN
+	1    5800 5250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D8
+U 1 1 5F4A6413
+P 5800 5850
+AR Path="/5F4A6413" Ref="D8"  Part="1" 
+AR Path="/5F425588/5F4A6413" Ref="D?"  Part="1" 
+AR Path="/5F427149/5F4A6413" Ref="D?"  Part="1" 
+AR Path="/5F4272B6/5F4A6413" Ref="D?"  Part="1" 
+AR Path="/5F4273E5/5F4A6413" Ref="D?"  Part="1" 
+AR Path="/5F4274E1/5F4A6413" Ref="D?"  Part="1" 
+AR Path="/5F427655/5F4A6413" Ref="D?"  Part="1" 
+F 0 "D8" H 5793 5595 50  0000 C CNN
+F 1 "LED" H 5793 5686 50  0000 C CNN
+F 2 "LED_SMD:LED_PLCC-2" H 5800 5850 50  0001 C CNN
+F 3 "~" H 5800 5850 50  0001 C CNN
+	1    5800 5850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6550 5850 6550 6050
+Wire Wire Line
+	8300 4650 8850 4650
+Wire Wire Line
+	8300 5250 8850 5250
+Wire Wire Line
+	8300 5850 8850 5850
+Wire Wire Line
+	8300 4050 8300 4650
+Connection ~ 8300 4650
+Wire Wire Line
+	8300 4650 8300 5250
+Connection ~ 8300 5250
+Wire Wire Line
+	8300 5250 8300 5850
+Wire Wire Line
+	9750 4050 9750 4650
+Wire Wire Line
+	9150 5850 9750 5850
+Connection ~ 9750 5850
+Wire Wire Line
+	9150 5250 9750 5250
+Connection ~ 9750 5250
+Wire Wire Line
+	9750 5250 9750 5850
+Wire Wire Line
+	9150 4650 9750 4650
+Connection ~ 9750 4650
+Wire Wire Line
+	9750 4650 9750 5250
+$Comp
+L Device:LED D13
+U 1 1 5F4A9904
+P 9000 4050
+AR Path="/5F4A9904" Ref="D13"  Part="1" 
+AR Path="/5F425588/5F4A9904" Ref="D?"  Part="1" 
+AR Path="/5F427149/5F4A9904" Ref="D?"  Part="1" 
+AR Path="/5F4272B6/5F4A9904" Ref="D?"  Part="1" 
+AR Path="/5F4273E5/5F4A9904" Ref="D?"  Part="1" 
+AR Path="/5F4274E1/5F4A9904" Ref="D?"  Part="1" 
+AR Path="/5F427655/5F4A9904" Ref="D?"  Part="1" 
+F 0 "D13" H 8993 3795 50  0000 C CNN
+F 1 "LED" H 8993 3886 50  0000 C CNN
+F 2 "LED_SMD:LED_PLCC-2" H 9000 4050 50  0001 C CNN
+F 3 "~" H 9000 4050 50  0001 C CNN
+	1    9000 4050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8300 4050 8850 4050
+Wire Wire Line
+	9150 4050 9750 4050
+$Comp
+L power:VPP #PWR0109
+U 1 1 5F4A990C
+P 8300 4000
+F 0 "#PWR0109" H 8300 3850 50  0001 C CNN
+F 1 "VPP" H 8315 4173 50  0000 C CNN
+F 2 "" H 8300 4000 50  0001 C CNN
+F 3 "" H 8300 4000 50  0001 C CNN
+	1    8300 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 4000 8300 4050
+Connection ~ 8300 4050
+$Comp
+L power:GNDS #PWR0110
+U 1 1 5F4A9914
+P 9750 6050
+F 0 "#PWR0110" H 9750 5800 50  0001 C CNN
+F 1 "GNDS" H 9755 5877 50  0000 C CNN
+F 2 "" H 9750 6050 50  0001 C CNN
+F 3 "" H 9750 6050 50  0001 C CNN
+	1    9750 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D14
+U 1 1 5F4A991A
+P 9000 4650
+AR Path="/5F4A991A" Ref="D14"  Part="1" 
+AR Path="/5F425588/5F4A991A" Ref="D?"  Part="1" 
+AR Path="/5F427149/5F4A991A" Ref="D?"  Part="1" 
+AR Path="/5F4272B6/5F4A991A" Ref="D?"  Part="1" 
+AR Path="/5F4273E5/5F4A991A" Ref="D?"  Part="1" 
+AR Path="/5F4274E1/5F4A991A" Ref="D?"  Part="1" 
+AR Path="/5F427655/5F4A991A" Ref="D?"  Part="1" 
+F 0 "D14" H 8993 4395 50  0000 C CNN
+F 1 "LED" H 8993 4486 50  0000 C CNN
+F 2 "LED_SMD:LED_PLCC-2" H 9000 4650 50  0001 C CNN
+F 3 "~" H 9000 4650 50  0001 C CNN
+	1    9000 4650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D15
+U 1 1 5F4A9920
+P 9000 5250
+AR Path="/5F4A9920" Ref="D15"  Part="1" 
+AR Path="/5F425588/5F4A9920" Ref="D?"  Part="1" 
+AR Path="/5F427149/5F4A9920" Ref="D?"  Part="1" 
+AR Path="/5F4272B6/5F4A9920" Ref="D?"  Part="1" 
+AR Path="/5F4273E5/5F4A9920" Ref="D?"  Part="1" 
+AR Path="/5F4274E1/5F4A9920" Ref="D?"  Part="1" 
+AR Path="/5F427655/5F4A9920" Ref="D?"  Part="1" 
+F 0 "D15" H 8993 4995 50  0000 C CNN
+F 1 "LED" H 8993 5086 50  0000 C CNN
+F 2 "LED_SMD:LED_PLCC-2" H 9000 5250 50  0001 C CNN
+F 3 "~" H 9000 5250 50  0001 C CNN
+	1    9000 5250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D16
+U 1 1 5F4A9926
+P 9000 5850
+AR Path="/5F4A9926" Ref="D16"  Part="1" 
+AR Path="/5F425588/5F4A9926" Ref="D?"  Part="1" 
+AR Path="/5F427149/5F4A9926" Ref="D?"  Part="1" 
+AR Path="/5F4272B6/5F4A9926" Ref="D?"  Part="1" 
+AR Path="/5F4273E5/5F4A9926" Ref="D?"  Part="1" 
+AR Path="/5F4274E1/5F4A9926" Ref="D?"  Part="1" 
+AR Path="/5F427655/5F4A9926" Ref="D?"  Part="1" 
+F 0 "D16" H 8993 5595 50  0000 C CNN
+F 1 "LED" H 8993 5686 50  0000 C CNN
+F 2 "LED_SMD:LED_PLCC-2" H 9000 5850 50  0001 C CNN
+F 3 "~" H 9000 5850 50  0001 C CNN
+	1    9000 5850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9750 5850 9750 6050
+$EndSCHEMATC
