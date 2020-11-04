@@ -1,5 +1,6 @@
 # UV LightBox
 
+- Required Kicad Hardware library: https://github.com/cracked-machine/KicadLibrary
 - Related SW project: https://github.com/cracked-machine/UV_LED_Driver_SW_STM32F051
 
 This is a modular design that drives 4 panels of UV LEDS and 1 standard LED string.
